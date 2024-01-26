@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(225, 225, 225);
+}
+.audio {
+    margin-left: 625px;
+}
+.align-col {
+    flex-basis: 25%;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.campus-col {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.campus-col img {
+    width: 100%;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: .25s;
+    font-size: 50px;
+    opacity: .5;
+}
+.layer:hover {
+    background-color: rgba(125, 125, 125, .5);
+    font-size: 62.5px;
+    opacity: 1;
+}
+.facilities-col {
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.facilities-col img {
+    margin-top: -12.5%;
+    border-radius: 20px;
+}
+.facilities-col img:hover {
+    opacity: .5;
+    transition: .25s;
+    cursor: pointer;
+}
+.testemonials-col {
+    background-color: rgba(200, 200, 200, .5);
+    margin: auto;
+    flex-basis: 25%;
+    cursor: pointer;
+}
+.testemonials-col div p {
+    padding: 0;
+}
+.testemonials-col div h4 {
+    margin: 25px;
+}
+.align-box {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+header {
+    background: linear-gradient(rgba(125, 0, 0, .125), rgba(0, 125, 0, .125)), url(college.webp);
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    background-color: rgba(250, 250, 250, .125);
+    padding: 2.5% 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a img {
+    width: 250px;
+    opacity: .5;
+    border-radius: 75%;
+}
+nav a img:hover {
+    width: 375px;
+    transition: .25s;
+}
+.nav-links-list {
+    flex: 1;
+}
+.nav-links-list ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 40px;
+    margin: 0px 10px;
+    position: relative;
+}
+.nav-links-list ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.bi {
+    font-size: 25px;
+}
+.nav-links-list ul li a:hover {
+    font-size: 30px;
+    transition: .25s;
+}
+.bi:hover {
+    font-size: 35px;
+    transition: .25s;
+    cursor: pointer;
+}
+.text-box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-box h1 {
+    font-size: 50px;
+    opacity: .9;
+    color: rgba(250, 250, 250, .75);
+}
+.text-box h2 {
+    font-size: 25px;
+    opacity: .9;
+    color: rgba(250, 250, 250, .75);
+}
+.text-box p {
+    margin: 10px 0;
+    font-size: 12.5px;
+    opacity: .9;
+    color: rgba(250, 250, 250, .75);
+}
+.hero-btn {
+    text-decoration: none;
+    color: rgba(250, 250, 250, .75);
+    background-color: transparent;
+    border: 1.25px solid white;
+    padding: 12.5px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.hero-btn:hover {
+    border-color: rgba(250, 250, 250, .75);
+    background-color: rgba(250, 250, 250, .75);
+    font-weight: bold;
+    opacity: .50;
+    transition: .25s;
+    color: black;
+}
+.row {
+    margin-top: 10%;
+    justify-content: space-between;
+    display: flex;
+}
+.course-col {
+    background-color: rgba(125, 125, 125, .75);
+    padding: 25px 12.5px;
+}
+.course-col:hover {
+    box-shadow: 0 0 20px black;
+    transition: .25s;
+}
+section h1 {
+    font-size: 37.5px;
+    margin-bottom: 25px;
+}
+h3 {
+    margin: 10px 0;
+}
+p {
+    color: #242424;
+    font-size: 12.5px;
+    font-weight: 375;
+    line-height: 25px;
+    padding: 10px;
+}
+.comment-col {
+    width: 250px;
+}
+.comment-box {
+    display: flex;
+    height: 500px;
+}
+.facilities-box {
+    align-items: center;
+    padding: 25px 0;
+}
+.layer-col {
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    padding: 12.5px 25px;
+    cursor: pointer;
+    transition: .25s;
+    font-size: 50px;
+    position: absolute;
+    top: -12.5%;
+    left: 25%;
+    opacity: .75;
+}
+.facilities-layer {
+    margin: auto;
+    width: 50%;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: transparent;
+    border: 1.25px solid black;
+    padding: 12.5px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .25s;
+    font-size: 25px;
+}
+.facilities-layer:hover {
+    font-size: 30px;
+    background-color: rgba(125, 125, 125, .25);
+    ;
+}
+.icons {
+    margin: 12.5px;
+}
+@media (max-width:768px) {
+    .nav-links-list {
+        display: none;
+    }
+    .bi {
+        display: block;
+        font-size: 35px;
+    }
+    .bi:hover {
+        font-size: 40px;
+    }
+    .text-box h1 {
+        font-size: 25px;
+    }
+    .text-box h2 {
+        font-size: 12.5px;
+    }
+    .text-box p {
+        font-size: 6.25px;
+    }
+    .row {
+        display: block;
+    }
+}
